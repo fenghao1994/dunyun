@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <!--授权钥匙-->
+    <RelativeLayout
+        android:id="@+id/rl_auth_key"
+        style="@style/me_item_relativeLayout">
+
+        <TextView
+            style="@style/me_item_txt"
+            android:layout_toRightOf="@id/iv_auth_phone"
+            android:text="授权钥匙" />
+
+        <Button
+            android:id="@+id/btn_key"
+            style="@style/me_item_right"
+            android:layout_width="80dp"
+            android:background="@drawable/blue_btn_bg"
+            android:text="选择钥匙"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_keys"
+        android:layout_width="match_parent"
+        android:layout_height="80dip"></ListView>
+
+    <TextView style="@style/me_item_sep1" />
+    <!--授权钥匙-->
+    <RelativeLayout
+        android:id="@+id/rl_auth_phone"
+        style="@style/me_item_relativeLayout">
+
+        <TextView
+            android:id="@+id/tv_auth_key_name"
+            style="@style/me_item_txt"
+            android:layout_toRightOf="@id/iv_auth_phone"
+            android:text="手机号码" />
+
+        <Button
+            android:id="@+id/btn_phones"
+            style="@style/me_item_right"
+            android:layout_width="80dp"
+            android:background="@drawable/blue_btn_bg"
+            android:text="通讯录"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_phone"
+        android:layout_width="match_parent"
+        android:layout_height="80dip"></ListView>
+
+    <TextView style="@style/me_item_sep1" />
+
+    <!--授权开始时间-->
+    <RelativeLayout
+        android:id="@+id/rl_auth_start"
+        style="@style/me_item_relativeLayout">
+
+        <TextView
+            style="@style/me_item_txt"
+            android:layout_toRightOf="@id/iv_auth_start"
+            android:text="开始时间" />
+
+        <TextView
+            android:id="@+id/tv_auth_start"
+            style="@style/item_right"
+            android:padding="6dip"
+            android:text="请选择生效时间"
+            android:textColor="@color/item_right_color" />
+    </RelativeLayout>
+
+    <TextView style="@style/me_item_sep1" />
+    <!--授权开始时间-->
+    <RelativeLayout
+        android:id="@+id/rl_auth_end"
+        style="@style/me_item_relativeLayout">
+
+        <TextView
+            style="@style/me_item_txt"
+            android:layout_toRightOf="@id/iv_auth_end"
+            android:text="截止时间" />
+
+        <TextView
+            android:id="@+id/tv_auth_end"
+            style="@style/item_right"
+            android:padding="6dip"
+            android:text="请选择生效时间"
+            android:textColor="@color/item_right_color" />
+    </RelativeLayout>
+
+    <TextView style="@style/me_item_sep1" />
+
+    <RelativeLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:id="@+id/rl_key_number"
+        style="@style/me_item_relativeLayout">
+
+        <TextView
+            style="@style/me_item_txt"
+            android:layout_toRightOf="@id/iv_key_number"
+            android:text="授权次数" />
+
+        <EditText
+            android:id="@+id/et_key_number"
+            style="@style/item_right"
+            android:layout_width="160dip"
+            android:background="@null"
+            android:gravity="right"
+            android:numeric="integer"
+            android:hint="请输入授权次数"
+            android:paddingBottom="6dip"
+            android:paddingTop="6dip"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <TextView style="@style/me_item_sep1" />
+
+
+    <Button
+        android:id="@+id/btn_submit"
+        style="@style/blue_btn_bg"
+        android:layout_marginTop="10dip"
+        android:text="确定授权" />
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <!--添加钥匙-->
+    <RelativeLayout
+        android:id="@+id/rl_key_setting_add"
+        style="@style/me_item_relativeLayout">
+
+        <ImageView
+            android:id="@+id/iv_key_setting_add"
+            style="@style/me_item_icon"
+            android:src="@drawable/key_setting_add" />
+
+        <TextView
+            android:id="@+id/tv_key_setting_add"
+            style="@style/me_item_txt"
+            android:layout_toRightOf="@id/iv_key_setting_add"
+            android:text="@string/key_setting_add" />
+
+        <CheckBox
+            android:id="@+id/cb_key_setting_add"
+            style="@style/me_item_right_checkbox" />
+    </RelativeLayout>
+
+    <TextView style="@style/me_item_sep1" />
+    <!--删除钥匙-->
+    <RelativeLayout
+        android:id="@+id/rl_key_setting_delete"
+        style="@style/me_item_relativeLayout">
+
+        <ImageView
+            android:id="@+id/iv_key_setting_delete"
+            style="@style/me_item_icon"
+            android:src="@drawable/key_setting_delete" />
+
+        <TextView
+            android:id="@+id/tv_key_setting_delete"
+            style="@style/me_item_txt"
+            android:layout_toRightOf="@id/iv_key_setting_delete"
+            android:text="@string/key_setting_delete" />
+
+        <CheckBox
+            android:id="@+id/cb_key_setting_delete"
+            style="@style/me_item_right_checkbox" />
+    </RelativeLayout>
+
+    <TextView style="@style/me_item_sep1" />
+    <!--密码开门-->
+    <RelativeLayout
+        android:id="@+id/rl_key_setting_passwd"
+        style="@style/me_item_relativeLayout">
+
+        <ImageView
+            android:id="@+id/iv_key_setting_passwd"
+            style="@style/me_item_icon"
+            android:src="@drawable/key_setting_passwd" />
+
+        <TextView
+            android:id="@+id/tv_key_setting_passwd"
+            style="@style/me_item_txt"
+            android:layout_toRightOf="@id/iv_key_setting_passwd"
+            android:text="@string/key_setting_passwd" />
+
+        <CheckBox
+            android:id="@+id/cb_key_setting_passwd"
+            style="@style/me_item_right_checkbox" />
+    </RelativeLayout>
+
+    <TextView style="@style/me_item_sep1" />
+    <!--清空锁内用户-->
+    <RelativeLayout
+        android:id="@+id/rl_key_setting_more_clear"
+        style="@style/me_item_relativeLayout">
+
+        <ImageView
+            android:id="@+id/iv_key_setting_more_clear"
+            style="@style/me_item_icon"
+            android:src="@drawable/key_setting_more_clear" />
+
+        <TextView
+            android:id="@+id/tv_key_setting_more_clear"
+            style="@style/me_item_txt"
+            android:layout_toRightOf="@id/iv_key_setting_more_clear"
+            android:text="@string/key_setting_more_clear" />
+
+        <CheckBox
+            android:id="@+id/cb_key_setting_more_clear"
+            style="@style/me_item_right_checkbox" />
+    </RelativeLayout>
+
+    <TextView style="@style/me_item_sep1" />
+    <!--电量与门锁状态反馈-->
+    <RelativeLayout
+        android:id="@+id/rl_key_setting_more_power"
+        style="@style/me_item_relativeLayout">
+
+        <ImageView
+            android:id="@+id/iv_key_setting_more_power"
+            style="@style/me_item_icon"
+            android:src="@drawable/key_setting_more_power" />
+
+        <TextView
+            android:id="@+id/tv_key_setting_more_power"
+            style="@style/me_item_txt"
+            android:layout_toRightOf="@id/iv_key_setting_more_power"
+            android:text="@string/key_setting_more_power" />
+
+        <CheckBox
+            android:id="@+id/cb_key_setting_more_power"
+            style="@style/me_item_right_checkbox" />
+    </RelativeLayout>
+
+    <TextView style="@style/me_item_sep1" />
+</LinearLayout>

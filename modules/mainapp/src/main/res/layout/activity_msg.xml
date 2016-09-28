@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color">
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="60dip"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="4dip"
+        android:layout_marginTop="8dip"
+        android:gravity="right"
+        android:text="00:00"
+        android:textColor="@color/light_grey"
+        android:textSize="14sp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/tv_time"
+        android:background="@drawable/message_point" />
+
+    <com.psoft.framework.android.base.ui.view.refreshview.PullToRefreshView
+        android:id="@+id/mPullRefreshView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ListView
+            android:id="@+id/lv_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@null" />
+    </com.psoft.framework.android.base.ui.view.refreshview.PullToRefreshView>
+
+</RelativeLayout>

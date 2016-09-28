@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@drawable/white_dialog_sharp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="10dip"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_number1"
+                style="@style/passwd_item"
+                android:src="@drawable/passwd_number_02" />
+
+            <ImageView
+                android:id="@+id/iv_number2"
+                style="@style/passwd_item"
+                android:src="@drawable/passwd_number_02" />
+
+            <ImageView
+                android:id="@+id/iv_number3"
+                style="@style/passwd_item"
+                android:src="@drawable/passwd_number_02" />
+
+            <ImageView
+                android:id="@+id/iv_number4"
+                style="@style/passwd_item"
+                android:src="@drawable/passwd_number_02" />
+
+            <ImageView
+                android:id="@+id/iv_number5"
+                style="@style/passwd_item"
+                android:src="@drawable/passwd_number_02" />
+
+            <ImageView
+                android:id="@+id/iv_number6"
+                style="@style/passwd_item"
+                android:src="@drawable/passwd_number_02" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/btn_1"
+                style="@style/passwd_btn_item"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/btn_2"
+                style="@style/passwd_btn_item"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/btn_3"
+                style="@style/passwd_btn_item"
+                android:text="3" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/btn_4"
+                style="@style/passwd_btn_item"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/btn_5"
+                style="@style/passwd_btn_item"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/btn_6"
+                style="@style/passwd_btn_item"
+                android:text="6" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/btn_7"
+                style="@style/passwd_btn_item"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/btn_8"
+                style="@style/passwd_btn_item"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/btn_9"
+                style="@style/passwd_btn_item"
+                android:text="9" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:layout_marginBottom="10dip"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/btn_del"
+                style="@style/passwd_btn_item"
+                android:text="删除" />
+
+            <Button
+                android:id="@+id/btn_0"
+                style="@style/passwd_btn_item"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/btn_ok"
+                style="@style/passwd_btn_item"
+                android:text="确定" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

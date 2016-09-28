@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <!--更多-->
+    <RelativeLayout
+        android:id="@+id/rl_key_setting_more"
+        style="@style/me_item_relativeLayout">
+
+        <ImageView
+            android:id="@+id/iv_key_setting_more"
+            style="@style/me_item_icon"
+            android:src="@drawable/key_setting_icon1" />
+
+        <TextView
+            style="@style/me_item_txt"
+            android:layout_toRightOf="@id/iv_key_setting_more"
+            android:text="@string/key_setting_more" />
+
+        <ImageView style="@style/me_item_right" />
+    </RelativeLayout>
+
+    <TextView style="@style/me_item_sep" />
+    <!--固件刷新-->
+    <RelativeLayout
+        android:id="@+id/rl_key_setting_update"
+        style="@style/me_item_relativeLayout">
+
+        <ImageView
+            android:id="@+id/iv_key_setting_update"
+            style="@style/me_item_icon"
+            android:src="@drawable/key_setting_icon2" />
+
+        <TextView
+            style="@style/me_item_txt"
+            android:layout_toRightOf="@id/iv_key_setting_update"
+            android:text="@string/key_setting_update" />
+
+        <ImageView style="@style/me_item_right" />
+    </RelativeLayout>
+
+    <TextView style="@style/me_item_sep" />
+    <!--常开设置-->
+    <RelativeLayout
+        android:id="@+id/rl_key_setting_set"
+        style="@style/me_item_relativeLayout">
+
+        <ImageView
+            android:id="@+id/iv_key_setting_set"
+            style="@style/me_item_icon"
+            android:src="@drawable/key_setting_icon3" />
+
+        <TextView
+            android:id="@+id/tv_key_setting_set"
+            style="@style/me_item_txt"
+            android:layout_toRightOf="@id/iv_key_setting_set"
+            android:text="@string/key_setting_set" />
+
+        <ImageView style="@style/me_item_right" />
+    </RelativeLayout>
+    <TextView style="@style/me_item_sep1" />
+    <!--远程授权-->
+    <RelativeLayout
+        android:id="@+id/rl_key_setting_auth"
+        style="@style/me_item_relativeLayout">
+
+        <ImageView
+            android:id="@+id/iv_key_setting_auth"
+            style="@style/me_item_icon"
+            android:src="@drawable/key_setting_icon4" />
+
+        <TextView
+            android:id="@+id/tv_key_setting_auth"
+            style="@style/me_item_txt"
+            android:layout_toRightOf="@id/iv_key_setting_auth"
+            android:text="@string/key_setting_auth" />
+
+        <CheckBox
+            android:id="@+id/cb_key_setting_auth"
+            style="@style/me_item_right_checkbox" />
+    </RelativeLayout>
+    <TextView style="@style/me_item_sep1" />
+
+</LinearLayout>

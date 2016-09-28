@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <!--远程报警-->
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rl_me_setting_alert"
+        style="@style/me_item_relativeLayout">
+
+        <ImageView
+            android:id="@+id/iv_me_setting_alert"
+            style="@style/me_item_icon"
+            android:src="@drawable/me_setting_alert" />
+
+        <TextView
+            android:id="@+id/tv_me_setting_alert"
+            style="@style/me_item_txt"
+            android:layout_toRightOf="@id/iv_me_setting_alert"
+            android:text="@string/me_setting_alert" />
+
+        <ImageView style="@style/me_item_right" />
+    </RelativeLayout>
+
+    <TextView style="@style/me_item_sep1" />
+    <!--账户授权-->
+    <RelativeLayout
+        android:id="@+id/rl_me_setting_auth"
+        style="@style/me_item_relativeLayout">
+
+        <ImageView
+            android:id="@+id/iv_me_setting_auth"
+            style="@style/me_item_icon"
+            android:src="@drawable/me_setting_auth" />
+
+        <TextView
+            android:id="@+id/tv_me_setting_auth"
+            style="@style/me_item_txt"
+            android:layout_toRightOf="@id/iv_me_setting_auth"
+            android:text="@string/me_setting_auth" />
+
+        <ImageView style="@style/me_item_right" />
+    </RelativeLayout>
+
+    <TextView style="@style/me_item_sep1" />
+    <!--感应开锁-->
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rl_me_setting_near"
+        style="@style/me_item_relativeLayout">
+
+        <ImageView
+            android:id="@+id/iv_me_setting_near"
+            style="@style/me_item_icon"
+            android:src="@drawable/me_setting_near" />
+
+        <TextView
+            android:id="@+id/tv_me_setting_near"
+            style="@style/me_item_txt"
+            android:layout_toRightOf="@id/iv_me_setting_near"
+            android:text="@string/me_setting_near" />
+
+        <ImageView style="@style/me_item_right" />
+    </RelativeLayout>
+
+    <TextView style="@style/me_item_sep1" android:visibility="gone"/>
+    <!--摇一摇-->
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rl_me_setting_shake"
+        style="@style/me_item_relativeLayout">
+
+        <ImageView
+            android:id="@+id/iv_me_setting_shake"
+            style="@style/me_item_icon"
+            android:src="@drawable/me_setting_shake" />
+
+        <TextView
+            style="@style/me_item_txt"
+            android:layout_toRightOf="@id/iv_me_setting_shake"
+            android:text="@string/me_setting_shake" />
+
+        <ImageView style="@style/me_item_right" />
+    </RelativeLayout>
+
+    <TextView style="@style/me_item_sep" android:visibility="gone"/>
+
+</LinearLayout>

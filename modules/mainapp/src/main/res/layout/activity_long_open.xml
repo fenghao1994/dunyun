@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <!--授权开始时间-->
+    <RelativeLayout
+        android:id="@+id/rl_auth_start"
+        style="@style/me_item_relativeLayout">
+
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/iv_auth_start"
+            style="@style/me_item_icon"
+            android:src="@drawable/auth_start" />
+
+        <TextView
+            style="@style/me_item_txt"
+            android:layout_toRightOf="@id/iv_auth_start"
+            android:text="开始时间" />
+
+        <TextView style="@style/item_right"
+            android:text="请选择开始时间"
+            android:padding="6dip"
+            android:textColor="@color/item_right_color"
+            android:id="@+id/tv_auth_start" />
+    </RelativeLayout>
+
+    <TextView style="@style/me_item_sep1" />
+    <!--授权开始时间-->
+    <RelativeLayout
+        android:id="@+id/rl_auth_end"
+        style="@style/me_item_relativeLayout">
+
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/iv_auth_end"
+            style="@style/me_item_icon"
+            android:src="@drawable/auth_end" />
+
+        <TextView
+            style="@style/me_item_txt"
+            android:layout_toRightOf="@id/iv_auth_end"
+            android:text="结束时间" />
+
+        <TextView style="@style/item_right"
+            android:text="请选择结束时间"
+            android:padding="6dip"
+            android:textColor="@color/item_right_color"
+            android:id="@+id/tv_auth_end" />
+    </RelativeLayout>
+
+    <TextView style="@style/me_item_sep1" />
+
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_marginTop="160dip"
+        style="@style/blue_btn_bg"
+        android:text="确定"/>
+</LinearLayout>

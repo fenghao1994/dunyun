@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/me_bg_color">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/include_header"/>
+
+    <LinearLayout
+        android:id="@+id/top_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_bar"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_title_all"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="全部"
+            android:background="@color/white"
+            android:textColor="@color/record_title_sep_color" />
+
+        <TextView
+            android:id="@+id/tv_title_open"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="开门"
+            android:background="@color/white"
+            android:textColor="@color/record_title_color"/>
+
+        <TextView
+            android:id="@+id/tv_title_close"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="关门"
+            android:background="@color/white"
+            android:textColor="@color/record_title_color"/>
+
+        <TextView
+            android:id="@+id/tv_title_add"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="添加"
+            android:background="@color/white"
+            android:textColor="@color/record_title_color"/>
+
+        <TextView
+            android:id="@+id/tv_title_auth"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="授权"
+            android:background="@color/white"
+            android:textColor="@color/record_title_color"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sep_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_ly"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_title_all_sep"
+            style="@style/tab_title_sep"
+            />
+
+        <TextView
+            android:id="@+id/tv_title_open_sep"
+            style="@style/tab_title_sep1"/>
+
+        <TextView
+            android:id="@+id/tv_title_close_sep"
+            style="@style/tab_title_sep1"/>
+
+        <TextView
+            android:id="@+id/tv_title_add_sep"
+            style="@style/tab_title_sep1"/>
+
+        <TextView
+            android:id="@+id/tv_title_auth_sep"
+            style="@style/tab_title_sep1"/>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/sep_lay"
+        android:layout_gravity="center" />
+
+</RelativeLayout> 

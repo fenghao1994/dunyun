@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dip"
+        android:gravity="center"
+        android:text="搜索附近的锁"
+        android:textColor="@color/light_grey"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_top2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_top"
+        android:layout_marginTop="30dip"
+        android:gravity="center"
+        android:text="配对时，请长按锁设置键使锁处于设置状态"
+        android:textColor="@color/light_grey"
+        android:textSize="14sp" />
+
+
+    <ImageView
+        android:id="@+id/iv_mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/add_key_phone" />
+
+
+    <ImageView
+        android:id="@+id/iv_img5"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/iv_mobile"
+        android:src="@drawable/add_key_5" />
+
+    <ImageView
+        android:id="@+id/iv_img4"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/iv_img5"
+        android:src="@drawable/add_key_4" />
+
+    <ImageView
+        android:id="@+id/iv_img3"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/iv_img4"
+        android:src="@drawable/add_key_3" />
+
+    <ImageView
+        android:id="@+id/iv_img2"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/iv_img3"
+        android:src="@drawable/add_key_2" />
+
+    <ImageView
+        android:id="@+id/iv_img1"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/iv_img2"
+        android:src="@drawable/add_key_1" />
+
+
+    <ImageView
+        android:id="@+id/iv_phone"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/iv_img1"
+        android:src="@drawable/add_key_lock" />
+
+</RelativeLayout>

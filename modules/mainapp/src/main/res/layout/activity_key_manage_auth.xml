@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <!--修改钥匙名称-->
+    <RelativeLayout
+        android:id="@+id/rl_update_key_name"
+        style="@style/me_item_relativeLayout">
+
+        <ImageView
+            android:id="@+id/iv_update_key_name"
+            style="@style/me_item_icon"
+            android:src="@drawable/icon_update_key_name" />
+
+        <TextView
+            android:id="@+id/tv_keyname"
+            style="@style/me_item_txt"
+            android:layout_toRightOf="@id/iv_update_key_name"
+            android:text="@string/update_key_name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_keyname"
+            android:text="   (点击修改钥匙名称)"
+            android:textColor="@color/light_bg_grey"
+            android:textSize="10sp" />
+
+        <ImageView
+            style="@style/me_item_right"
+            android:padding="6dip" />
+    </RelativeLayout>
+
+    <TextView style="@style/me_item_sep" />
+
+    <!--授权开始时间-->
+    <RelativeLayout
+        android:id="@+id/rl_auth_start"
+        style="@style/me_item_relativeLayout">
+
+        <ImageView
+            android:id="@+id/iv_auth_start"
+            style="@style/me_item_icon"
+            android:src="@drawable/auth_start" />
+
+        <TextView
+            style="@style/me_item_txt"
+            android:layout_toRightOf="@id/iv_auth_start"
+            android:text="开始时间" />
+
+        <TextView
+            android:id="@+id/tv_auth_start"
+            style="@style/item_right"
+            android:padding="6dip"
+            android:text=""
+            android:textColor="@color/item_right_color" />
+    </RelativeLayout>
+
+    <TextView style="@style/me_item_sep" />
+    <!--授权开始时间-->
+    <RelativeLayout
+        android:id="@+id/rl_auth_end"
+        style="@style/me_item_relativeLayout">
+
+        <ImageView
+            android:id="@+id/iv_auth_end"
+            style="@style/me_item_icon"
+            android:src="@drawable/auth_end" />
+
+        <TextView
+            style="@style/me_item_txt"
+            android:layout_toRightOf="@id/iv_auth_end"
+            android:text="截止时间" />
+
+        <TextView
+            android:id="@+id/tv_auth_end"
+            style="@style/item_right"
+            android:padding="6dip"
+            android:text=""
+            android:textColor="@color/item_right_color" />
+    </RelativeLayout>
+
+    <TextView style="@style/me_item_sep" />
+
+    <RelativeLayout
+        android:id="@+id/rl_key_number"
+        style="@style/me_item_relativeLayout">
+
+        <ImageView
+            android:id="@+id/iv_key_number"
+            style="@style/me_item_icon"
+            android:src="@drawable/auth_number" />
+
+        <TextView
+            style="@style/me_item_txt"
+            android:layout_toRightOf="@id/iv_key_number"
+            android:text="授权次数" />
+
+        <TextView
+            android:id="@+id/tv_key_number"
+            style="@style/item_right"
+            android:padding="6dip"
+            android:text=""
+            android:textColor="@color/item_right_color" />
+    </RelativeLayout>
+
+    <TextView style="@style/me_item_sep" />
+
+    <RelativeLayout
+        android:id="@+id/rl_lock_record"
+        style="@style/me_item_relativeLayout">
+
+        <ImageView
+            android:id="@+id/iv_lock_record"
+            style="@style/me_item_icon"
+            android:src="@drawable/icon_lock_record" />
+
+        <TextView
+            style="@style/me_item_txt"
+            android:layout_toRightOf="@id/iv_lock_record"
+            android:padding="6dip"
+            android:text="@string/lock_record" />
+
+        <ImageView style="@style/me_item_right" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_del"
+        style="@style/orange_btn_bg"
+        android:layout_marginTop="160dip"
+        android:text="删除钥匙" />
+
+</LinearLayout>

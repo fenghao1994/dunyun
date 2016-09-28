@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_color">
+
+    <!--开锁消息通知-->
+    <RelativeLayout
+        android:id="@+id/rl_lock_notif"
+        android:layout_marginTop="10dp"
+        style="@style/me_item_relativeLayout">
+
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/iv_lock_notif"
+            style="@style/me_item_icon"
+            android:src="@drawable/icon_lock_notif" />
+
+        <TextView
+            style="@style/me_item_txt"
+            android:layout_toRightOf="@id/iv_lock_notif"
+            android:text="消息提醒" />
+
+        <CheckBox
+            android:id="@+id/cb_notif"
+            style="@style/me_item_right_checkbox"
+            />
+    </RelativeLayout>
+    <TextView style="@style/me_item_sep1" />
+
+</LinearLayout>

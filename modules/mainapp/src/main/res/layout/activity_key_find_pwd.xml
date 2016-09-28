@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <!--修改钥匙名称-->
+    <RelativeLayout
+        android:id="@+id/rl_update_key_name"
+        style="@style/me_item_relativeLayout">
+
+        <TextView
+            android:id="@+id/tv_keyname"
+            style="@style/me_item_txt"
+            android:text="登陆密码" />
+
+        <CheckBox
+            android:id="@+id/cb_passwd"
+            style="@style/passwd_right_checkbox"
+            android:padding="6dip"
+            android:checked="false" />
+
+        <EditText
+            android:id="@+id/et_keypasswd"
+            style="@style/normal_edit_bg"
+            android:layout_marginLeft="6dip"
+            android:layout_toLeftOf="@id/cb_passwd"
+            android:layout_toRightOf="@id/tv_keyname"
+            android:hint="请输入用户登陆密码"
+            android:password="true"/>
+
+    </RelativeLayout>
+
+    <TextView style="@style/me_item_sep1" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        style="@style/blue_btn_bg"
+        android:layout_marginTop="160dip"
+        android:text="确定" />
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <!--修改钥匙名称-->
+    <RelativeLayout
+        android:id="@+id/rl_update_key_name"
+        style="@style/me_item_relativeLayout">
+
+        <TextView
+            android:id="@+id/tv_keyname"
+            style="@style/me_item_txt"
+            android:layout_toRightOf="@id/iv_update_key_name"
+            android:text="@string/update_key_name" />
+
+        <EditText
+            android:id="@+id/et_keyname"
+            style="@style/normal_edit_bg"
+            android:layout_toRightOf="@id/tv_keyname"
+            android:layout_marginLeft="6dip"
+           />
+
+    </RelativeLayout>
+
+    <TextView style="@style/me_item_sep1" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_marginTop="160dip"
+        style="@style/blue_btn_bg"
+        android:text="确定修改"/>
+
+</LinearLayout>

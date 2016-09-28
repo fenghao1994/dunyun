@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_color">
+
+    <!--修改钥匙名称-->
+    <RelativeLayout
+        android:id="@+id/rl_update_key_name"
+        style="@style/me_item_relativeLayout">
+
+        <ImageView
+            android:id="@+id/iv_update_key_name"
+            style="@style/me_item_icon"
+            android:src="@drawable/icon_update_key_name" />
+
+        <TextView
+            android:id="@+id/tv_keyname"
+            style="@style/me_item_txt"
+            android:layout_toRightOf="@id/iv_update_key_name"
+            android:text="@string/update_key_name" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="10sp"
+            android:layout_toRightOf="@id/tv_keyname"
+            android:textColor="@color/light_bg_grey"
+            android:text="   (点击修改钥匙名称)" />
+
+        <ImageView style="@style/me_item_right" />
+    </RelativeLayout>
+    <TextView style="@style/me_item_sep1" />
+
+    <!--查看密码-->
+    <RelativeLayout
+        android:id="@+id/rl_find_key_passwd"
+        android:layout_marginTop="10dp"
+        style="@style/me_item_relativeLayout">
+
+        <ImageView
+            android:id="@+id/iv_find_key_passwd"
+            style="@style/me_item_icon"
+            android:src="@drawable/icon_update_key_name" />
+
+        <TextView
+            style="@style/me_item_txt"
+            android:layout_toRightOf="@id/iv_find_key_passwd"
+            android:text="查看开门密码" />
+
+        <ImageView style="@style/me_item_right" />
+    </RelativeLayout>
+    <TextView style="@style/me_item_sep1" />
+    <!--修改密码-->
+    <RelativeLayout
+        android:id="@+id/rl_update_key_passwd"
+        style="@style/me_item_relativeLayout">
+
+        <ImageView
+            android:id="@+id/iv_update_key_passwd"
+            style="@style/me_item_icon"
+            android:src="@drawable/icon_update_key_passwd" />
+
+        <TextView
+            style="@style/me_item_txt"
+            android:layout_toRightOf="@id/iv_update_key_passwd"
+            android:text="@string/update_key_passwd" />
+
+        <ImageView style="@style/me_item_right" />
+    </RelativeLayout>
+    <TextView style="@style/me_item_sep" />
+    <!--用户管理-->
+    <RelativeLayout
+        android:id="@+id/rl_user_manager"
+        style="@style/me_item_relativeLayout">
+
+        <ImageView
+            android:id="@+id/iv_user_manager"
+            style="@style/me_item_icon"
+            android:src="@drawable/icon_user_manager" />
+
+        <TextView
+            style="@style/me_item_txt"
+            android:layout_toRightOf="@id/iv_user_manager"
+            android:text="@string/user_manager" />
+
+        <ImageView style="@style/me_item_right" />
+    </RelativeLayout>
+    <TextView style="@style/me_item_sep" />
+    <!--门锁记录-->
+    <RelativeLayout
+        android:id="@+id/rl_lock_record"
+        style="@style/me_item_relativeLayout">
+
+        <ImageView
+            android:id="@+id/iv_lock_record"
+            style="@style/me_item_icon"
+            android:src="@drawable/icon_lock_record" />
+
+        <TextView
+            style="@style/me_item_txt"
+            android:layout_toRightOf="@id/iv_lock_record"
+            android:text="@string/lock_record" />
+
+        <ImageView style="@style/me_item_right" />
+    </RelativeLayout>
+    <TextView style="@style/me_item_sep" />
+    <!--远程授权-->
+    <RelativeLayout
+        android:id="@+id/rl_lock_auth"
+        style="@style/me_item_relativeLayout">
+
+        <ImageView
+            android:id="@+id/iv_lock_auth"
+            style="@style/me_item_icon"
+            android:src="@drawable/icon_lock_auth" />
+
+        <TextView
+            style="@style/me_item_txt"
+            android:layout_toRightOf="@id/iv_lock_auth"
+            android:text="@string/lock_auth" />
+
+        <ImageView style="@style/me_item_right" />
+    </RelativeLayout>
+    <TextView style="@style/me_item_sep" />
+
+    <!--功能设置-->
+    <RelativeLayout
+        android:id="@+id/rl_setting"
+        style="@style/me_item_relativeLayout">
+
+        <ImageView
+            android:id="@+id/iv_setting"
+            style="@style/me_item_icon"
+            android:src="@drawable/icon_setting" />
+
+        <TextView
+            style="@style/me_item_txt"
+            android:layout_toRightOf="@id/iv_setting"
+            android:text="@string/setting" />
+
+        <ImageView style="@style/me_item_right" />
+    </RelativeLayout>
+    <TextView style="@style/me_item_sep1" />
+
+    <!--开锁消息通知-->
+    <RelativeLayout
+        android:id="@+id/rl_lock_notif"
+        android:layout_marginTop="10dp"
+        style="@style/me_item_relativeLayout">
+
+        <ImageView
+            android:id="@+id/iv_lock_notif"
+            style="@style/me_item_icon"
+            android:src="@drawable/icon_lock_notif" />
+
+        <TextView
+            style="@style/me_item_txt"
+            android:layout_toRightOf="@id/iv_lock_notif"
+            android:text="@string/lock_notif" />
+
+        <CheckBox
+            android:id="@+id/cb_lock_notif"
+            style="@style/me_item_right_checkbox"
+            />
+    </RelativeLayout>
+    <TextView style="@style/me_item_sep" />
+    <!--共享门锁记录-->
+    <RelativeLayout
+        android:id="@+id/rl_lock_share"
+        style="@style/me_item_relativeLayout">
+
+        <ImageView
+            android:id="@+id/iv_lock_share"
+            style="@style/me_item_icon"
+            android:src="@drawable/icon_lock_share" />
+
+        <TextView
+            style="@style/me_item_txt"
+            android:layout_toRightOf="@id/iv_lock_share"
+            android:text="@string/lock_share" />
+
+        <CheckBox
+            android:id="@+id/cb_lock_share"
+            style="@style/me_item_right_checkbox"
+            />
+    </RelativeLayout>
+    <TextView style="@style/me_item_sep1" />
+
+    <Button
+        android:id="@+id/btn_del"
+        android:layout_marginTop="20dip"
+        style="@style/orange_btn_bg"
+        android:text="删除钥匙" />
+
+</LinearLayout>

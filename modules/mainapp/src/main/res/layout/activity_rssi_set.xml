@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_auth_phone"
+        style="@style/me_item_relativeLayout">
+
+        <TextView
+            style="@style/me_item_txt"
+            android:layout_toRightOf="@id/iv_auth_phone"
+            android:text="手机处于感应位置1" />
+
+        <Button
+            android:id="@+id/btn_get1"
+            android:text="获取距离值"
+            style="@style/me_item_right"
+            android:layout_width="100dp"
+            android:textColor="@color/white"
+            android:background="@drawable/blue_btn_bg"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/me_item_relativeLayout">
+
+        <TextView
+            style="@style/me_item_txt"
+            android:layout_toRightOf="@id/iv_auth_phone"
+            android:text="手机处于感应位置2" />
+
+        <Button
+            android:id="@+id/btn_get2"
+            android:text="获取距离值"
+            style="@style/me_item_right"
+            android:layout_width="100dp"
+            android:textColor="@color/white"
+            android:background="@drawable/blue_btn_bg"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/me_item_relativeLayout">
+
+        <TextView
+            style="@style/me_item_txt"
+            android:layout_toRightOf="@id/iv_auth_phone"
+            android:text="手机处于感应位置3" />
+
+        <Button
+            android:id="@+id/btn_get3"
+            android:text="获取距离值"
+            style="@style/me_item_right"
+            android:layout_width="100dp"
+            android:textColor="@color/white"
+            android:background="@drawable/blue_btn_bg"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_rssi"
+        android:layout_marginTop="30dip"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:text="0"/>
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_marginTop="160dip"
+        style="@style/blue_btn_bg"
+        android:text="确定"/>
+</LinearLayout>

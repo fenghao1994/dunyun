@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="left">
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ItemImage"
+            android:layout_width="70dip"
+            android:layout_height="70dip"
+            android:layout_marginLeft="6dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/me_photo1" />
+
+        <ImageView
+            android:id="@+id/ItemImageSep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/ItemImage"
+            android:src="@drawable/record_sep" />
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_toRightOf="@id/ItemImageSep"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="开门"
+            android:textColor="@color/record_sep_color2"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_nick_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_type"
+            android:layout_margin="4dp"
+            android:layout_toRightOf="@id/ItemImageSep"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="昵称"
+            android:textColor="@color/record_txt_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_nick_name"
+            android:layout_margin="4dp"
+            android:layout_toRightOf="@id/ItemImageSep"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="手机号"
+            android:textColor="@color/record_txt_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_phone"
+            android:layout_margin="4dp"
+            android:layout_toRightOf="@id/ItemImageSep"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="时间"
+            android:textColor="@color/record_txt_color"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_bottom"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_top">
+
+            <ImageView
+                android:id="@+id/ItemImageSep2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/record_sep2" />
+
+            <TextView
+                android:id="@+id/tv_item1"
+                android:layout_below="@id/ItemImageSep2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="授权人"
+                android:textColor="@color/record_txt_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_item2"
+                android:layout_below="@id/ItemImageSep2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_toRightOf="@id/tv_item1"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="被授权人"
+                android:textColor="@color/record_txt_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_item3"
+                android:layout_below="@id/tv_item2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_toRightOf="@id/tv_item1"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="授权开始时间"
+                android:textColor="@color/record_txt_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_item4"
+                android:layout_below="@id/tv_item3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="授权截止时间"
+                android:textColor="@color/record_txt_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_item5"
+                android:layout_below="@id/tv_item4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="授权次数"
+                android:textColor="@color/record_txt_color"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+def dbflow_version = "3.0.0-beta5"
+
+android {
+    //签名配置
+    signingConfigs {
+        config {
+            keyAlias 'angma'
+            keyPassword 'angma88888888'
+        }
+    }
+    //编译版本
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+    defaultConfig {
+        applicationId "net.dunyun.framework.lock"
+        minSdkVersion 18
+        targetSdkVersion 22
+        versionCode 17
+        versionName "V2.1.8"
+        ndk {
+            //设置支持的SO库架构
+            abiFilters 'armeabi' //, 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                //这里修改apk文件名
+                //def fileName = "demo_${variant.productFlavors[0].name}-${defaultConfig.versionCode}-${defaultConfig.versionName}-${releaseTime() }.apk"
+                def fileName = "DY_0922.apk"
+                output.outputFile = new File(outputFile.parent, fileName)
+            }
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.jayway.android.robotium:robotium-solo:5.2.1'
+    compile 'com.android.support:support-annotations:22.2.1'
+    //compile 'com.android.support:support-annotations:23.2.1'
+    //第三方库，用于sqllite数据库
+    apt "com.github.Raizlabs.DBFlow:dbflow-processor:${dbflow_version}"
+    compile "com.github.Raizlabs.DBFlow:dbflow-core:${dbflow_version}"
+    compile "com.github.Raizlabs.DBFlow:dbflow:${dbflow_version}"
+    //锁SDK库及自定义工具库
+    compile 'com.psoft.bluetooth:psoft-bluetooth:2.1.6'
+    compile 'com.psoft.framework.android:psoft-base:2.1.6'
+    //第三方图形处理库
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    //第三方腾讯日志记录库
+    compile 'com.tencent.bugly:crashreport:2.1.3'
+}

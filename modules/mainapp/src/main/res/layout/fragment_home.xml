@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mPullRefreshView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/include_header"
+        android:visibility="gone" />
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:id="@+id/myProgressBar"
+        android:layout_below="@id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="5px"
+        />
+    <WebView
+        android:id="@+id/main_view_activity_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/myProgressBar"
+        android:scrollbars="none" />
+
+    <LinearLayout
+        android:id="@+id/ll_error"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/key_setting_icon2" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="请点击重新加载"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dip"
+        android:background="@color/white">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_button0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:background="@color/light_bg_grey"
+                android:textColor="@color/white"
+                android:padding="14dip"
+                android:text="向户主申请"
+                android:textSize="14.0sp" />
+
+            <RadioButton
+                android:id="@+id/radio_button1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="14dip"
+                android:text="向物管申请"
+                android:textColor="@color/light_grey"
+                android:textSize="14.0sp"
+                android:checked="false" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/line"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radioGroup"
+            android:layout_margin="0dip"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/line_00"
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:layout_margin="0dip"
+                android:layout_weight="1"
+                android:background="@color/light_bg_grey"></TextView>
+
+            <TextView
+                android:id="@+id/line_01"
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:layout_margin="0dip"
+                android:layout_weight="1"
+                android:background="@color/light_bg_no_grey"></TextView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/rl_area"
+        style="@style/me_item_relativeLayout"
+        android:gravity="center"
+        android:layout_marginTop="10dip"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/tv_area"
+            style="@style/me_item_txt"
+            android:layout_width="80dip"
+            android:gravity="center"
+            android:text="小区名" />
+
+        <EditText
+            android:id="@+id/et_area"
+            style="@style/gate_edit_bg"
+            android:layout_width="160dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:layout_toRightOf="@id/tv_area"
+            android:layout_weight="0.6"
+            android:enabled="false"
+            android:hint="请选择小区"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_contact"
+            style="@style/me_item_right"
+            android:layout_width="80dp"
+            android:layout_weight="0.2"
+            android:background="@drawable/blue_btn_bg"
+            android:text="选择"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <TextView style="@style/me_item_sep1" />
+
+    <LinearLayout
+        style="@style/me_item_relativeLayout"
+        android:gravity="center"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/tv_phone"
+            style="@style/me_item_txt"
+            android:layout_width="80dip"
+            android:gravity="center"
+            android:text="户主手机号" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            style="@style/gate_edit_bg"
+            android:layout_width="160dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:layout_toRightOf="@id/tv_area"
+            android:layout_weight="0.6"
+            android:hint=""
+            android:textSize="14sp" />
+
+        <Button
+            style="@style/me_item_right"
+            android:layout_width="80dp"
+            android:layout_weight="0.2"
+            android:background="@drawable/blue_btn_bg"
+            android:text="选择"
+            android:textColor="@color/white"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <TextView style="@style/me_item_sep1" />
+
+    <LinearLayout
+        style="@style/me_item_relativeLayout"
+        android:layout_gravity="top"
+        android:gravity="top"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/tv_reason"
+            style="@style/me_item_txt"
+            android:layout_width="80dip"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="申请理由" />
+
+        <EditText
+            android:id="@+id/et_reason"
+            style="@style/gate_edit_bg"
+            android:layout_width="160dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:layout_toRightOf="@id/tv_area"
+            android:layout_weight="0.6"
+            android:hint=""
+            android:minLines="5"
+            android:textSize="14sp" />
+
+        <Button
+            style="@style/me_item_right"
+            android:layout_width="80dp"
+            android:layout_weight="0.2"
+            android:background="@drawable/blue_btn_bg"
+            android:text="选择"
+            android:textColor="@color/white"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <TextView style="@style/me_item_sep1" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        style="@style/blue_btn_bg"
+        android:layout_marginTop="40dip"
+        android:text="申请" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<upgrader>
+	<!-- 客户端传服务器 -->
+	<client>
+		<!-- 项目名称（必填） -->
+		<appName>angma</appName>
+		<!-- 客户端版本（当无此项配置时，系统默认下载最新版本的所有文件） -->
+		<currentVersion>bind_V_1</currentVersion>
+	</client>
+</upgrader>
